@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <plugin type="com.dpnet.mybatis.plugins.CustomMapperPlugin">
+            <property name="mappers" value="com.dpnet.mybatis.plugins.DPMapper"/>
+        </plugin>
+
+        <!-- 数据库连接 -->
+        <jdbcConnection connectionURL="jdbc:mysql://60.205.230.94:3306/travel?useSSL=false"
+                        userId="dp"
+                        password="DP2017@)!&amp;"
+                        driverClass="com.mysql.jdbc.Driver"/>
+        <!-- Java 实体路径 -->
+        <javaModelGenerator targetPackage="com.dpnet.tools.qq.domain.model" targetProject="src/main/java"/>
+        <!-- SQL XML 路径 -->
+        <sqlMapGenerator targetPackage="com.dpnet.tools.qq.domain.repository"
+                         targetProject="src/main/resources"/>
+        <!-- Java 接口路径 -->
+        <javaClientGenerator targetPackage="com.dpnet.tools.qq.domain.repository" targetProject="src/main/java"
+                             type="XMLMAPPER"/>
+
+
+
+
+        <table
+                tableName="seed"
+                enableCountByExample="true"
+                enableUpdateByExample="true"
+                enableDeleteByExample="true"
+                enableSelectByExample="true"
+                selectByExampleQueryId="true">
+            <property
+                    name="useActualColumnNames"
+                    value="true" />
+            <!-- 需要插入时返回主键值，请将此属性打开，column值为主键的列明-->
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+
+        </table>
+
+        <table
+                tableName="switch"
+                enableCountByExample="true"
+                enableUpdateByExample="true"
+                enableDeleteByExample="true"
+                enableSelectByExample="true"
+                selectByExampleQueryId="true">
+            <property
+                    name="useActualColumnNames"
+                    value="true" />
+            <!-- 需要插入时返回主键值，请将此属性打开，column值为主键的列明-->
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+
+        </table>
+
+    </context>
+</generatorConfiguration>

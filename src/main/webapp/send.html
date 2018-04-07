@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>send</title>
+</head>
+<body>
+
+<form id="form" method="post" onsubmit="dosubmit()" enctype="application/x-www-form-urlencoded">
+
+    <input id="action"  ><br>
+    <label>key:</label>
+    <input id="key" name="key"><br>
+    <label>value:</label>
+    <input id="value" name="value"><br>
+
+    <input onclick="add()" type="button" value="添加" />
+
+    <input type="submit" value="提交" />
+    <br>
+
+
+</form>
+<script>
+
+    function dosubmit() {
+        var form = document.getElementById("form");
+        form.action = document.getElementById("action").value;
+       return true;
+    }
+
+    function add() {
+
+        var form = document.getElementById("form");
+        var key = document.getElementById("key").value;
+        var value = document.getElementById("value").value;
+
+        var ele = document.createElement("input");
+        ele.name = key;
+        ele.value = value;
+        form.append(key+":", ele);
+
+
+    }
+
+</script>
+</body>
+</html>

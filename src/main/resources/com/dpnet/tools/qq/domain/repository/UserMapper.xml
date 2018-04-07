@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dpnet.tools.qq.domain.repository.UserMapper">
+  <resultMap id="BaseResultMap" type="com.dpnet.tools.qq.domain.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="tel" jdbcType="CHAR" property="tel" />
+    <result column="identity" jdbcType="CHAR" property="identity" />
+    <result column="picture1" jdbcType="VARCHAR" property="picture1" />
+    <result column="picture2" jdbcType="VARCHAR" property="picture2" />
+    <result column="level" jdbcType="INTEGER" property="level" />
+    <result column="certs" jdbcType="VARCHAR" property="certs" />
+    <result column="uid" jdbcType="VARCHAR" property="uid" />
+    <result column="star_state" jdbcType="INTEGER" property="star_state" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nick_name" />
+    <result column="occupation" jdbcType="VARCHAR" property="occupation" />
+    <result column="head_img" jdbcType="VARCHAR" property="head_img" />
+    <result column="openid" jdbcType="VARCHAR" property="openid" />
+    <result column="holdcard" jdbcType="VARCHAR" property="holdcard" />
+    <result column="minopenid" jdbcType="VARCHAR" property="minopenid" />
+    <result column="unionid" jdbcType="VARCHAR" property="unionid" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="balance" jdbcType="DECIMAL" property="balance" />
+    <result column="alipay_no" jdbcType="VARCHAR" property="alipay_no" />
+  </resultMap>
+</mapper>

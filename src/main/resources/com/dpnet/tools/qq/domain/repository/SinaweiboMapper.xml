@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dpnet.tools.qq.domain.repository.SinaweiboMapper">
+  <resultMap id="BaseResultMap" type="com.dpnet.tools.qq.domain.model.Sinaweibo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="uid" jdbcType="VARCHAR" property="uid" />
+    <result column="mid" jdbcType="VARCHAR" property="mid" />
+    <result column="headimg" jdbcType="VARCHAR" property="headimg" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="weibotxt" jdbcType="LONGVARCHAR" property="weibotxt" />
+    <result column="weiboimg" jdbcType="LONGVARCHAR" property="weiboimg" />
+  </resultMap>
+</mapper>

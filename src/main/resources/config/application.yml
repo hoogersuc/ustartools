@@ -1,0 +1,17 @@
+fileserve:
+  path: /Users/hooger/Documents
+server:
+  port: 17381
+spring:
+  http:
+    multipart:
+      maxFileSize: 100Mb
+      maxRequestSize: 1024Mb
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://60.205.230.94:3306/travel?useUnicode=true&characterEncoding=utf-8
+    username: dp
+    password: DP2017@)!&
+mybatis:
+  config-locations: classpath:mybatis-config.xml
+  mapper-locations: classpath:com.dpnet.tools.qq.domain.repository/*.xml

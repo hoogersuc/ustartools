@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dpnet.tools.qq.domain.repository.QqmemberMapper">
+  <resultMap id="BaseResultMap" type="com.dpnet.tools.qq.domain.model.Qqmember">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="uin" jdbcType="BIGINT" property="uin" />
+    <result column="card" jdbcType="VARCHAR" property="card" />
+    <result column="flag" jdbcType="INTEGER" property="flag" />
+    <result column="g" jdbcType="INTEGER" property="g" />
+    <result column="join_time" jdbcType="BIGINT" property="join_time" />
+    <result column="last_speak_time" jdbcType="BIGINT" property="last_speak_time" />
+    <result column="level" jdbcType="INTEGER" property="level" />
+    <result column="point" jdbcType="INTEGER" property="point" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="qage" jdbcType="INTEGER" property="qage" />
+    <result column="role" jdbcType="INTEGER" property="role" />
+    <result column="tags" jdbcType="VARCHAR" property="tags" />
+    <result column="groupid" jdbcType="BIGINT" property="groupid" />
+  </resultMap>
+</mapper>
