@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dpnet.tools.qq.domain.repository.AppBaitiaoMapper">
+  <resultMap id="BaseResultMap" type="com.dpnet.tools.qq.domain.model.AppBaitiao">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="credit_amount" jdbcType="DECIMAL" property="credit_amount" />
+    <result column="remaining_amount" jdbcType="DECIMAL" property="remaining_amount" />
+    <result column="progress" jdbcType="TINYINT" property="progress" />
+    <result column="updated" jdbcType="BIGINT" property="updated" />
+    <result column="created" jdbcType="BIGINT" property="created" />
+  </resultMap>
+</mapper>
