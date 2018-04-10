@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fileserve.iml" filepath="$PROJECT_DIR$/fileserve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tools.iml" filepath="$PROJECT_DIR$/tools.iml" />
     </modules>
   </component>
 </project>

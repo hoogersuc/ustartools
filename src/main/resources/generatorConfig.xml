@@ -27,35 +27,21 @@
 
 
 
-        <table
-                tableName="seed"
-                enableCountByExample="true"
-                enableUpdateByExample="true"
-                enableDeleteByExample="true"
-                enableSelectByExample="true"
-                selectByExampleQueryId="true">
-            <property
-                    name="useActualColumnNames"
-                    value="true" />
-            <!-- 需要插入时返回主键值，请将此属性打开，column值为主键的列明-->
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
 
-        </table>
+    <table
+            tableName="url_history"
+            enableCountByExample="true"
+            enableUpdateByExample="true"
+            enableDeleteByExample="true"
+            enableSelectByExample="true"
+            selectByExampleQueryId="true">
+        <property
+                name="useActualColumnNames"
+                value="true" />
+        <!-- 需要插入时返回主键值，请将此属性打开，column值为主键的列明-->
+        <generatedKey column="id" sqlStatement="MySql" identity="true" />
 
-        <table
-                tableName="switch"
-                enableCountByExample="true"
-                enableUpdateByExample="true"
-                enableDeleteByExample="true"
-                enableSelectByExample="true"
-                selectByExampleQueryId="true">
-            <property
-                    name="useActualColumnNames"
-                    value="true" />
-            <!-- 需要插入时返回主键值，请将此属性打开，column值为主键的列明-->
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
-
-        </table>
+    </table>
 
     </context>
 </generatorConfiguration>

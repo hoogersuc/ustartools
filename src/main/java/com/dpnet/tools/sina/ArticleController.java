@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.dpnet.tools.qq.domain.model.Sinaweibo;
 import com.dpnet.tools.qq.domain.repository.SinaweiboMapper;
-import com.sun.deploy.net.HttpUtils;
 import lombok.extern.log4j.Log4j2;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.BeanUtils;

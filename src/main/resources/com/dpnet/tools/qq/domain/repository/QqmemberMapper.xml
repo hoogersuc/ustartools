@@ -5,7 +5,7 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="uin" jdbcType="BIGINT" property="uin" />
+    <id column="id" jdbcType="INTEGER" property="id" />
     <result column="card" jdbcType="VARCHAR" property="card" />
     <result column="flag" jdbcType="INTEGER" property="flag" />
     <result column="g" jdbcType="INTEGER" property="g" />
@@ -17,6 +17,7 @@
     <result column="qage" jdbcType="INTEGER" property="qage" />
     <result column="role" jdbcType="INTEGER" property="role" />
     <result column="tags" jdbcType="VARCHAR" property="tags" />
+    <result column="uin" jdbcType="BIGINT" property="uin" />
     <result column="groupid" jdbcType="BIGINT" property="groupid" />
   </resultMap>
 </mapper>
